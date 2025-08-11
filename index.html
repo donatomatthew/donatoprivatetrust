@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matthew Donato — Independent Fiduciary & Trust Advisor</title>
+<link rel="icon" href="/favicon.ico">
+<style>
+:root{
+  --ivory:#F8F5F0; --navy:#1B2B3C; --gold:#987C4A;
+  --ink:rgba(0,0,0,.82); --muted:rgba(27,43,60,.7);
+}
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;background:var(--ivory);color:var(--navy);
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height:1.55; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,92vw);margin-inline:auto}
+header.site{padding:28px 0 0}
+.brand{display:flex;align-items:center;gap:16px}
+.logo{width:56px;height:56px;border-radius:12px;background:var(--navy);
+  display:grid;place-items:center;position:relative;box-shadow:0 10px 30px rgba(27,43,60,.12), inset 0 0 0 2px rgba(152,124,74,.35)}
+.logo::after{content:"";position:absolute;inset:0;border-radius:12px;box-shadow:inset 0 0 0 2px var(--gold)}
+.logo span{color:var(--gold);font-weight:700;letter-spacing:.04em}
+h1{margin:0;font-weight:600;letter-spacing:.01em;font-size:clamp(26px,4.4vw,42px)}
+.tag{color:var(--muted);font-variant:small-caps;letter-spacing:.12em;font-size:clamp(12px,1.8vw,14px)}
+nav{margin-top:18px;border-top:1px solid rgba(27,43,60,.12);}
+.nav-inner{display:flex;gap:18px;padding:12px 0}
+.nav-link{padding:8px 12px;border-radius:999px}
+.nav-link.active,.nav-link:hover{background:#fff;border:1px solid rgba(27,43,60,.12);box-shadow:0 6px 18px rgba(27,43,60,.06)}
+main{padding:28px 0 56px}
+.hero{background:#fff;border:1px solid rgba(27,43,60,.1);border-radius:18px;padding:24px;
+  box-shadow:0 8px 28px rgba(27,43,60,.08)}
+h2{margin:0 0 10px;font-size:clamp(20px,3vw,28px)}
+.lead{color:var(--ink);font-size:clamp(16px,2vw,18px);margin:0}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(12,1fr);margin-top:18px}
+.card{grid-column:span 6;background:#fff;border:1px solid rgba(27,43,60,.1);border-radius:16px;padding:18px;box-shadow:0 6px 22px rgba(27,43,60,.06)}
+.card h3{margin:0 0 6px}
+@media(max-width:900px){.card{grid-column:span 12}}
+footer{padding:30px 0 46px;color:var(--muted);font-size:14px;border-top:1px solid rgba(27,43,60,.12)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;font-weight:600;letter-spacing:.02em}
+.btn.primary{background:var(--navy);color:#fff;box-shadow:0 6px 18px rgba(27,43,60,.18)}
+.btn.ghost{border:1px solid var(--navy);}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-variant:small-caps;letter-spacing:.14em;font-size:12px}
+.eyebrow i{display:inline-block;width:22px;height:2px;background:var(--gold);border-radius:2px;opacity:.7}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="container">
+    <div class="brand">
+      <div class="logo"><span>MD</span></div>
+      <div>
+        <h1>Matthew Donato</h1>
+        <div class="tag">Independent Fiduciary &amp; Trust Advisor</div>
+      </div>
+    </div>
+    <nav>
+      <div class="container nav-inner">
+        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link " href="/about">About</a>
+        <a class="nav-link " href="/services">Services</a>
+        <a class="nav-link " href="/contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="hero">
+      <div class="eyebrow"><i></i> Independent Guidance. Fiduciary Duty.</div>
+      <p class="lead">Objective, conflict‑free counsel to help you structure, preserve, and administer your legacy with clarity. When you work with me, you work directly with me—no institutional agenda, no layers of staff.</p>
+      <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn primary" href="/contact">Request an Intro Call</a>
+        <a class="btn ghost" href="tel:+16178939305">Call (617) 893‑9305</a>
+      </div>
+    </section>
+    <div class="grid">
+      <div class="card">
+        <h3>Trust &amp; Estate Review</h3>
+        <p>High‑level review of wills &amp; trusts to identify gaps, simplify administration, and align documents with your intentions.</p>
+      </div>
+      <div class="card">
+        <h3>Fiduciary Administration</h3>
+        <p>Hands‑on guidance for trustees, beneficiaries, and families—calendaring, distributions, records, and coordination with counsel.</p>
+      </div>
+      <div class="card">
+        <h3>Legacy Planning</h3>
+        <p>Practical, plain‑English strategies to preserve family harmony and provide long‑term stewardship across generations.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="y"></span> Matthew Donato · Donato Private Trust
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+</body></html>
